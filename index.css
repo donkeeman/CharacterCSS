@@ -1,7 +1,17 @@
+/* animations */
+
+@keyframes eyeBlink {
+    
+}
+
+/* reset css */
+
 body, div{
     margin: 0;
     padding: 0;
 }
+
+/* design */
 
 body{
     background-color: green;
@@ -19,12 +29,12 @@ body{
 .face{
     background-color: rgb(238, 255, 47);
     width: 300px;
-    height: 200px;
-    border: 5px solid black;
-    border-top-left-radius: 35% 50%;
-    border-top-right-radius: 35% 50%;
-    border-bottom-left-radius: 35% 50%;
-    border-bottom-right-radius: 35% 50%;
+    height: 220px;
+    border: 5px solid rgb(81, 134, 0);
+    border-top-left-radius: 240px 130px;
+    border-top-right-radius: 240px 130px;
+    border-bottom-left-radius: 200px 120px;
+    border-bottom-right-radius: 200px 120px;
     position: absolute;
     left: 100px;
     top: 50px;
@@ -35,12 +45,12 @@ body{
     background-color: white;
     width: 300px;
     height: 200px;
-    border-top-left-radius: 35% 50%;
-    border-top-right-radius: 35% 50%;
-    border-bottom-left-radius: 35% 50%;
-    border-bottom-right-radius: 35% 50%;
+    border-top-left-radius: 160px 100px;
+    border-top-right-radius: 160px 100px;
+    border-bottom-left-radius: 200px 80px;
+    border-bottom-right-radius: 200px 80px;
     position: absolute;
-    top: 100px;
+    top: 120px;
 }
 
 .eye{
@@ -53,13 +63,13 @@ body{
 .eye.left{
     position: absolute;
     left: 120px;
-    top: 60px;
+    top: 100px;
 }
 
 .eye.right{
     position: absolute;
     right: 120px;
-    top: 60px;
+    top: 100px;
 }
 
 .mouth{
@@ -87,26 +97,26 @@ body{
 .blush{
     background-color: salmon;
     width: 50px;
-    height: 50px;
+    height: 20px;
     border-radius: 50%;
     /* box-shadow: 0 0 5px salmon; */
 }
 
 .blush.left{
     position: absolute;
-    left: 5px;
-    top: 100px;
+    left: 15px;
+    top: 125px;
 }
 
 .blush.right{
     position: absolute;
-    right: 5px;
-    top: 100px;
+    right: 15px;
+    top: 125px;
 }
 
 .tongue{
     background-color: salmon;
-    border: 5px solid black;
+    border: 5px solid indianred;
     border-radius: 30px;
     width: 70px;
     height: 40px;
@@ -119,7 +129,7 @@ body{
 .tongueLine{
     width: 5px;
     height: 45px;
-    background-color: black;
+    background-color: indianred;
     border-radius: 30%;
     transform: rotate(90deg);
     position: absolute;
@@ -128,11 +138,44 @@ body{
 }
 
 .hideTongue{
-    background-color: gray;
+    background-color: white;
     width: 60px;
-    height: 40px;
+    height: 41px;
     position: absolute;
     bottom: 15px;
     right: 40px;
     transform: rotate(-15deg);
+}
+
+.body{
+    border-radius: 50%;
+    border: 5px solid rgb(81, 134, 0);
+    background-color: rgb(238, 255, 47);
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    left: 175px;
+    bottom: 50px;
+}
+
+.foot{
+    border-radius: 50%;
+    border: 5px solid rgb(81, 134, 0);
+    background-color: rgb(238, 255, 47);
+    width: 100px;
+    height: 40px;
+}
+
+.foot.left{
+    border-top-right-radius: 25%;
+    position: absolute;
+    left: 120px;
+    bottom: 30px;
+}
+
+.foot.right{
+    border-top-left-radius: 25%;
+    position: absolute;
+    right: 110px;
+    bottom: 30px;
 }
