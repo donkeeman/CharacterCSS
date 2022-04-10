@@ -8,8 +8,98 @@ body{
 }
 
 .charWrapper{
+    transform: translateY(25%);
     margin: 0 auto;
     width: 500px;
     height: 500px;
     background-color: white;
+    position: relative;
+}
+
+.face{
+    background-color: rgb(238, 255, 47);
+    width: 300px;
+    height: 200px;
+    border: 5px solid black;
+    border-top-left-radius: 35% 50%;
+    border-top-right-radius: 35% 50%;
+    border-bottom-left-radius: 35% 50%;
+    border-bottom-right-radius: 35% 50%;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    overflow: hidden;
+}
+
+.facePart{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 35% 50%;
+    border-top-right-radius: 35% 50%;
+    border-bottom-left-radius: 35% 50%;
+    border-bottom-right-radius: 35% 50%;
+    position: absolute;
+    top: 100px;
+}
+
+.eye{
+    width: 5px;
+    height: 45px;
+    background-color: black;
+    border-radius: 30%;
+}
+
+.eye.left{
+    position: absolute;
+    left: 120px;
+    top: 60px;
+}
+
+.eye.right{
+    position: absolute;
+    right: 120px;
+    top: 60px;
+}
+
+.mouth{
+    width: 120px;
+    height: 5px;
+    background-color: black;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.mouth.left{
+    position: absolute;
+    left: 32.5px;
+    bottom: 50px;
+    transform: rotate(15deg);
+}
+
+.mouth.right{
+    position: absolute;
+    right: 32.5px;
+    bottom: 50px;
+    transform: rotate(-195deg);
+}
+
+.blush{
+    background-color: salmon;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* box-shadow: 0 0 5px salmon; */
+}
+
+.blush.left{
+    position: absolute;
+    left: 5px;
+    top: 100px;
+}
+
+.blush.right{
+    position: absolute;
+    right: 5px;
+    top: 100px;
 }
