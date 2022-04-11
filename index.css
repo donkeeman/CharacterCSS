@@ -35,13 +35,13 @@ body{
     overflow: hidden;
 }
 
-.shadow{
+.faceShadow{
+    background-color: #999;
     border-radius: 50px;
     width: 200px;
     height: 100px;
-    background-color: #999;
     position: absolute;
-    left: 125px;
+    left: 122.5px;
     top: -70px;
 }
 
@@ -169,15 +169,6 @@ body{
     top: 210px;
 }
 
-.earPart{
-    background-color: #111;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: -15px;
-    top: -35px;
-}
-
 .ear.left{
     position: absolute;
     left: -4px;
@@ -192,4 +183,75 @@ body{
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     transform: rotate(-5deg);
+}
+
+
+.earShine{
+    background-color: #333;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -15px;
+    top: -35px;
+    /* overflow: hidden; */
+}
+
+.earPart{
+    background-color: #111;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 50px;
+}
+
+.earPart.left{
+    border-top-left-radius: 50px;
+}
+
+.earPart.right{
+    border-top-right-radius: 50px;
+}
+
+.antenna{
+    border: 5px solid black;
+    background-color: white;
+    width: 10px;
+    height: 150px;
+    position: absolute;
+    top: 80px;
+    overflow: hidden;
+}
+
+.antenna.left{
+    border-top-left-radius: 100% 30%;
+    border-top-right-radius: 5px;
+    position: absolute;
+    left: 25px;
+    transform: rotate(5deg);
+}
+
+.antenna.right{
+    border-top-right-radius: 100% 30%;
+    border-top-left-radius: 5px;
+    position: absolute;
+    right: 25px;
+    transform: rotate(-5deg);
+}
+
+.antennaShadow{
+    background-color: #999;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 110px;
+    left: -40px;
+}
+
+.antennaShadow.left{
+    transform: rotate(-20deg);
+}
+
+.antennaShadow.right{
+    transform: rotate(20deg);
 }
