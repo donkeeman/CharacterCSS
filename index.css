@@ -18,11 +18,9 @@ div{
 }
 
 .charWrapper{
-    transform: translateY(25%);
-    margin: 0 auto;
+    margin: 10% auto;
     width: 500px;
-    height: 500px;
-    background-color: transparent;
+    background-color: gray;
     position: relative;
 }
 
@@ -282,4 +280,27 @@ div{
 .blush{
     background-color: deepskyblue;
 
+}
+.text{
+    opacity: 0;
+    width: fit-content;
+    font-size: 96px;
+    color: deepskyblue;
+    font-weight: bolder;
+    position: absolute;
+    left: 28px;
+    top: 30px;
+    transition: opacity 0.2s;
+}
+
+.expression{
+    transition: opacity 0.2s;
+}
+
+.charWrapper:hover .expression{
+    opacity: 0;
+}
+
+.charWrapper:hover .text{
+    opacity: 1;
 }
