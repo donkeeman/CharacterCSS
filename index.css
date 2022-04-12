@@ -142,6 +142,31 @@ div{
     top: 125px;
 }
 
+.smile{
+    opacity: 0;
+}
+
+.eye2{
+    width: 60px;
+    height: 40px;
+    border: 15px solid deepskyblue;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom: 0;
+}
+
+.eye2.left{
+    position: absolute;
+    left: 90px;
+    top: 125px;
+}
+
+.eye2.right{
+    position: absolute;
+    right: 90px;
+    top: 125px;
+}
+
 .mouth{
     width: 80px;
     height: 35px;
@@ -166,7 +191,7 @@ div{
 
 .ear{
     /* border 사용 시 작은 여백이 생김? */
-    /* border-radius 와 overflow: hidden 의 문제?  */
+    /* border-radius 와 overflow: hidden 의 문제? */
     /* border: 5px solid black; */
     box-shadow: 0 0 0 5px black;
     background-color: white;
@@ -279,28 +304,37 @@ div{
 
 .blush{
     background-color: deepskyblue;
-
+    width: 70px;
+    height: 30px;
+    border-radius: 50%;
 }
-.text{
-    opacity: 0;
-    width: fit-content;
-    font-size: 96px;
-    color: deepskyblue;
-    font-weight: bolder;
+
+.blush.left{
     position: absolute;
-    left: 28px;
-    top: 30px;
-    transition: opacity 0.2s;
+    left: 70px;
+    bottom: 75px;
 }
 
-.expression{
-    transition: opacity 0.2s;
+.blush.right{
+    position: absolute;
+    right: 70px;
+    bottom: 75px;
 }
 
-.charWrapper:hover .expression{
+/* transition */
+
+.expression .default{
+    transition: opacity .1s;
+}
+
+.expression .smile{
+    transition: opacity .1s;
+}
+
+.charWrapper:hover .default{
     opacity: 0;
 }
 
-.charWrapper:hover .text{
+.charWrapper:hover .smile{
     opacity: 1;
 }
