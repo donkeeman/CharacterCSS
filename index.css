@@ -11,6 +11,12 @@ body{
     background-color: skyblue;
 }
 
+div{
+    vertical-align: middle;
+    font-size: none;
+    line-height: 0;
+}
+
 .charWrapper{
     transform: translateY(25%);
     margin: 0 auto;
@@ -122,8 +128,8 @@ body{
     width: 55px;
     height: 55px;
     border: 15px solid deepskyblue;
+    /* border: 15px double deepskyblue; */
     border-radius: 50%;
-    /* box-shadow: 0 0 5px skyblue; */
 }
 
 .eye.left{
@@ -142,6 +148,7 @@ body{
     width: 80px;
     height: 35px;
     border: 15px solid deepskyblue;
+    /* border: 15px double deepskyblue; */
     border-top: 0;
     border-bottom-left-radius: 300px;
     border-bottom-right-radius: 300px;
@@ -160,7 +167,10 @@ body{
 }
 
 .ear{
-    border: 5px solid black;
+    /* border 사용 시 작은 여백이 생김? */
+    /* border-radius 와 overflow: hidden 의 문제?  */
+    /* border: 5px solid black; */
+    box-shadow: 0 0 0 5px black;
     background-color: white;
     width: 40px;
     height: 120px;
@@ -185,31 +195,41 @@ body{
     transform: rotate(-5deg);
 }
 
-
 .earShine{
     background-color: #333;
     width: 100px;
     height: 100px;
+}
+
+.earShine.left{
     position: absolute;
-    left: -15px;
-    top: -35px;
-    /* overflow: hidden; */
+    left: -20px;
+    top: -40px;
+}
+
+.earShine.right{
+    position: absolute;
+    right: -20px;
+    top: -40px;
 }
 
 .earPart{
     background-color: #111;
     width: 50px;
     height: 50px;
-    position: absolute;
-    left: 10px;
-    top: 50px;
 }
 
 .earPart.left{
+    position: absolute;
+    left: -10px;
+    top: 10px;
     border-top-left-radius: 50px;
 }
 
 .earPart.right{
+    position: absolute;
+    right: -10px;
+    top: 10px;
     border-top-right-radius: 50px;
 }
 
@@ -243,15 +263,23 @@ body{
     background-color: #999;
     width: 100px;
     height: 40px;
-    position: absolute;
-    top: 110px;
-    left: -40px;
 }
 
 .antennaShadow.left{
+    position: absolute;
+    top: 110px;
+    left: -40px;
     transform: rotate(-20deg);
 }
 
 .antennaShadow.right{
+    position: absolute;
+    top: 110px;
+    right: -40px;
     transform: rotate(20deg);
+}
+
+.blush{
+    background-color: deepskyblue;
+
 }
