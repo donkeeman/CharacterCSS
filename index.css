@@ -1,3 +1,15 @@
+/* keyframes animation */
+@keyframes textSlide {
+    0%{
+        opacity: 1;
+        transform: translateX(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+}
+
 /* reset css */
 
 body, div{
@@ -121,6 +133,17 @@ div{
     position: absolute;
     left: 60px;
     bottom: 80px;
+}
+
+.text{
+    opacity: 0;
+    font-size: 150px;
+    line-height: 150px;
+    color: deepskyblue;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 10px;
 }
 
 .eye{
@@ -323,7 +346,7 @@ div{
     bottom: 75px;
 }
 
-/* transition */
+/* transition and animation*/
 
 .expression .default{
     transition: opacity .1s;
@@ -332,11 +355,19 @@ div{
 .expression .smile{
     transition: opacity .1s;
 }
-
+/* 
 .charWrapper:hover .default{
     opacity: 0;
 }
 
 .charWrapper:hover .smile{
     opacity: 1;
+} */
+
+.charWrapper:hover .expression{
+    opacity: 0;
+}
+
+.charWrapper:hover .text{
+    animation: 10s linear infinite textSlide;
 }
