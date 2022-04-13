@@ -23,14 +23,8 @@ body{
     background-color: skyblue;
 }
 
-div{
-    vertical-align: middle;
-    font-size: none;
-    line-height: 0;
-}
-
 .charWrapper{
-    margin: 10% auto;
+    margin: 5% auto;
     width: 500px;
     background-color: gray;
     position: relative;
