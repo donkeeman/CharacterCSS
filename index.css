@@ -1,12 +1,22 @@
 /* keyframes animation */
+
 @keyframes textSlide {
     0%{
         opacity: 1;
-        transform: translateX(50%);
+        transform: translateX(40%);
     }
     100%{
         opacity: 1;
         transform: translateX(-100%);
+    }
+}
+
+@keyframes changeExpression {
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
     }
 }
 
@@ -15,6 +25,10 @@
 body, div{
     margin: 0;
     padding: 0;
+}
+
+span{
+    cursor: default;
 }
 
 /* design */
@@ -26,7 +40,6 @@ body{
 .charWrapper{
     margin: 5% auto;
     width: 500px;
-    background-color: gray;
     position: relative;
 }
 
@@ -340,23 +353,15 @@ body{
     bottom: 75px;
 }
 
-/* transition and animation*/
+/* animation */
 
 .expression .default{
-    transition: opacity .1s;
+    animation: 3s step-start infinite changeExpression;
 }
 
 .expression .smile{
-    transition: opacity .1s;
+    animation: 3s step-end infinite changeExpression;
 }
-/* 
-.charWrapper:hover .default{
-    opacity: 0;
-}
-
-.charWrapper:hover .smile{
-    opacity: 1;
-} */
 
 .charWrapper:hover .expression{
     opacity: 0;
